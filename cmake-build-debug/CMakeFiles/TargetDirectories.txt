@@ -1,0 +1,3 @@
+/home/maximart/Documents/Cursus_42/2_circle/minitalk/cmake-build-debug/CMakeFiles/minitalk.dir
+/home/maximart/Documents/Cursus_42/2_circle/minitalk/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/maximart/Documents/Cursus_42/2_circle/minitalk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
