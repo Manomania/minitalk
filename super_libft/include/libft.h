@@ -39,7 +39,6 @@ typedef struct s_format
 	char	conversion;
 }	t_format;
 
-
 int		ft_putnbr(int n);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
@@ -111,6 +110,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
 
 #endif
