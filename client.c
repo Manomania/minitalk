@@ -55,7 +55,7 @@ int	main(int argc, char **argv)
 	sigaction(SIGUSR2, &act, NULL);
 	if (argc == 3)
 	{
-		pid = ft_atoi(argv[1])
+		pid = ft_atoi(argv[1]);
 		send_message(pid, argv[2]);
 	}
 	else if (argc > 3)
