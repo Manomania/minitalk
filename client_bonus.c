@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maximart <maximart@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/02 15:02:16 by maximart          #+#    #+#             */
-/*   Updated: 2024/12/02 15:02:16 by maximart         ###   ########.fr       */
+/*   Created: 2024/12/04 12:11:20 by maximart          #+#    #+#             */
+/*   Updated: 2024/12/04 12:11:26 by maximart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "minitalk_bonus.h"
+
 
 void	handle_ack(int signal)
 {
-	(void)signal;
 	g_ack = 0;
+	if (signal == SIGUSR2)
+		ft_printf("\033[92mMessage send\033[0m");
 }
 
 void	send_char(pid_t pid, unsigned char c)

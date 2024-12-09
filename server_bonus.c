@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   server_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maximart <maximart@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/02 14:38:11 by maximart          #+#    #+#             */
-/*   Updated: 2024/12/04 11:24:01 by maximart         ###   ########.fr       */
+/*   Created: 2024/12/04 12:12:02 by maximart          #+#    #+#             */
+/*   Updated: 2024/12/04 12:12:05 by maximart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "minitalk_bonus.h"
 
 void add_message(t_message *message, char c)
 {
@@ -48,9 +48,14 @@ void	handle_signal(int signal, siginfo_t *info, void *context)
 	if (message.bit_index == 8)
 	{
 		if (message.c_char == '\0')
+		{
 			clear_and_print_message(&message);
+			kill(info->si_pid, SIGUSR2);
+		}
 		else
+		{
 			add_message(&message, message.c_char);
+		}
 		message.c_char = 0;
 		message.bit_index = 0;
 	}

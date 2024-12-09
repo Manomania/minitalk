@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   minitalk_bonus.h                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maximart <maximart@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/02 14:55:37 by maximart          #+#    #+#             */
-/*   Updated: 2024/12/09 10:50:14 by maximart         ###   ########.fr       */
+/*   Created: 2024/12/04 12:12:24 by maximart          #+#    #+#             */
+/*   Updated: 2024/12/09 10:50:25 by maximart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#ifndef MINITALK_BONUS_H
+# define MINITALK_BONUS_H
 
 # include "super_libft/include/libft.h"
 # include <signal.h>
