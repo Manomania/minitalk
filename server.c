@@ -12,7 +12,7 @@
 
 #include "minitalk.h"
 
-void add_message(t_message *message, char c)
+void	add_message(t_message *message, char c)
 {
 	char	*str;
 
@@ -26,7 +26,9 @@ void add_message(t_message *message, char c)
 
 void	clear_and_print_message(t_message *message)
 {
-	t_list	*current = message->list;
+	t_list	*current;
+
+	current = message->list;
 	while (current)
 	{
 		ft_printf("%s", (char *)current->content);

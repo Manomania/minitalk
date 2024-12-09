@@ -12,7 +12,6 @@
 
 #include "minitalk_bonus.h"
 
-
 void	handle_ack(int signal)
 {
 	g_ack = 0;
@@ -22,7 +21,7 @@ void	handle_ack(int signal)
 
 void	send_char(pid_t pid, unsigned char c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < 8)
@@ -48,7 +47,7 @@ void	send_message(pid_t pid, const char *str)
 int	main(int argc, char **argv)
 {
 	struct sigaction	act;
-	pid_t		pid;
+	pid_t				pid;
 
 	act.sa_handler = handle_ack;
 	sigemptyset(&act.sa_mask);
